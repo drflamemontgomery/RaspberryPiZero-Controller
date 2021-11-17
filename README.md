@@ -1,6 +1,6 @@
 # Raspberry Pi Zero Controller
 
-[First Time Setup]
+<h2>First Time Setup</h2>
 
 Put hid.sh and tcp.c in /home/pi
 Add lines from rc.local to /etc/rc.local
