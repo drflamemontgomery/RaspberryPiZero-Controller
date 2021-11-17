@@ -1,0 +1,18 @@
+#------------------------------------------------------#
+# YOU SHOULD ADD THE LINES BELOW TO YOUR /etc/rc.local #
+# BEFORE exit 0                                        #
+#------------------------------------------------------#
+
+sudo su
+
+# Enable USB HID on the USB OTG port 
+/home/pi/hid.sh
+
+# Enable Complete Access to the /dev/hidgX files 
+sudo chmod 777 /dev/hidg0
+sudo chmod 777 /dev/hidg1
+sudo chmod 777 /dev/hidg2
+sudo chmod 777 /dev/hidg3
+
+# Run the TCP server in the background
+/home/pi/tcp &
